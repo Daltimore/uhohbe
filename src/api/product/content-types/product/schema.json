@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_id": {
+      "type": "uid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "colors": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "red",
+        "grey",
+        "white"
+      ]
+    },
+    "types": {
+      "type": "enumeration",
+      "enum": [
+        "candles",
+        "oil-diffusers",
+        "collections"
+      ]
+    },
+    "size": {
+      "type": "integer"
+    }
+  }
+}
