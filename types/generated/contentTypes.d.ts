@@ -368,6 +368,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     singularName: 'product';
     pluralName: 'products';
     displayName: 'product';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -382,6 +383,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     colors: Attribute.Enumeration<['black', 'red', 'grey', 'white']>;
     types: Attribute.Enumeration<['candles', 'oil-diffusers', 'collections']>;
     size: Attribute.Integer;
+    unique: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
