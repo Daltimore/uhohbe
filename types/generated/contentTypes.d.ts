@@ -384,6 +384,8 @@ export interface ApiProductProduct extends Schema.CollectionType {
     types: Attribute.Enumeration<['candles', 'oil-diffusers', 'collections']>;
     size: Attribute.Integer;
     is_unique: Attribute.Boolean;
+    quantity: Attribute.Integer;
+    details: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

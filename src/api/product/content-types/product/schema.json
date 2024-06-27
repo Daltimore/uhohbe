@@ -60,6 +60,12 @@
     },
     "is_unique": {
       "type": "boolean"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "details": {
+      "type": "text"
     }
   }
 }
