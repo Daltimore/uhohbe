@@ -58,7 +58,7 @@
     "size": {
       "type": "integer"
     },
-    "unique": {
+    "is_unique": {
       "type": "boolean"
     }
   }

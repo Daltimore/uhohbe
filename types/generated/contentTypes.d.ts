@@ -383,7 +383,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     colors: Attribute.Enumeration<['black', 'red', 'grey', 'white']>;
     types: Attribute.Enumeration<['candles', 'oil-diffusers', 'collections']>;
     size: Attribute.Integer;
-    unique: Attribute.Boolean;
+    is_unique: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
